@@ -100,6 +100,7 @@
 					C94925951C8E02A900736887 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 3N9F4HV8F4;
+						LastSwiftMigration = 0920;
 					};
 				};
 			};
@@ -256,6 +257,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattneuburg.RegistrationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -267,6 +270,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattneuburg.RegistrationExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -289,6 +294,7 @@
 				C94925AA1C8E02A900736887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

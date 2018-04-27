@@ -8,7 +8,7 @@ class RootViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let s = NSUserDefaults.standardUserDefaults().objectForKey("username") as? String {
+        if let s = UserDefaults.standard.object(forKey: "username") as? String {
             lab.text = "Welcome, \(s)"
         }
     }
