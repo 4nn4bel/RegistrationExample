@@ -11,8 +11,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         if let rvc = self.window?.rootViewController {
-            if UserDefaults.standard.object(forKey: "username") as? String != nil {
-                self.window!.rootViewController = rvc.storyboard!.instantiateViewController(withIdentifier: "root")
+            
+            let ud = UserDefaults.standard
+            if ud.string(forKey: "username") != nil {
+                let vc = rvc.storyboard!.instantiateViewController(withIdentifier: "userHasLoggedIn")
+                self.window!.rootViewController = vc
             }
         }
         return true
